@@ -136,7 +136,7 @@ class Program
         Console.Write("Digite o grupo muscular: ");
         string grupo = Console.ReadLine();
 
-        // LINQ para filtrar índices onde o grupo muscular coincide
+
         var indicesFiltrados = Enumerable.Range(0, nomes.Count)
             .Where(i => gruposMusculares[i].Equals(grupo, StringComparison.OrdinalIgnoreCase))
             .ToList();
@@ -167,7 +167,7 @@ class Program
             return;
         }
 
-        // Encontra a maior carga usando LINQ
+      
         double maiorCarga = cargas.Max();
         int index = cargas.IndexOf(maiorCarga);
 
