@@ -118,7 +118,7 @@ class Program
         Console.Write("Digite o nome para buscar: ");
         string busca = Console.ReadLine();
 
-        // LINQ para encontrar o índice do exercício (ignora maiúsculas/minúsculas)
+       
         var index = nomes.FindIndex(x => x.Equals(busca, StringComparison.OrdinalIgnoreCase));
 
         if (index != -1)
